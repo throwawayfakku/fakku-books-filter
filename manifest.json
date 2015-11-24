@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Fakku Books Filter",
+  "description": "This extension hides all fakku books / subscriptions from the page.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://www.fakku.net/*","http://www.fakku.net/*"],
+      "js": ["myscript.js"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "https://www.fakku.net/",
+    "http://www.fakku.net/"
+  ]
+}
